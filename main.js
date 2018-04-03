@@ -26,7 +26,7 @@ function loadQuote() {
     loadingEl.style.display = "block";
   }, 400);
 
-  //setTimeout(function doFetch() {  // tests loading indicator for slow api calls
+  // setTimeout(function doFetch() {  // tests loading indicator for slow api calls
   fetch('https://seinfeld-quotes.herokuapp.com/random')
       .then(function(response) {
         return response.json();
@@ -47,7 +47,7 @@ function loadQuote() {
           authorEl.textContent = "Your browser"
         }
       });
-  //}, 5000);
+  // }, 1000);
 }
 
 function updateQuote(json) {

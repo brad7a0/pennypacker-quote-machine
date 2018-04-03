@@ -71,6 +71,8 @@ a:hover {
 
   font-size: calc(2vw + 2vh);
   line-height: 1.5em;
+  max-height: 65vh;
+  overflow:  auto;
 }
 
 .smaller-quote-text {
@@ -88,10 +90,10 @@ a:hover {
 
 .loading {
   font-size: 1.5em;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1.2vw + 1.2vh);
   position: absolute;
   left: 2vw;
-  top: 5vh;
+  top: 4vh;
 }
 
 .author {
@@ -140,4 +142,29 @@ a:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
 
+  .quote-outer {
+    margin-top: 20vh;
+  }
+
+  .quote-text {
+    /* for older browsers */
+    font-size: 1.2em;
+
+    font-size: 4vh;
+    line-height: 1.5em;
+  }
+
+  .smaller-quote-text {
+    font-size: 2.8vh;
+  }
+
+  .smallest-quote-text {
+    font-size: 2.5vh;
+  }
+
+  .author {
+    font-size: 2.7vh;
+  }
+}
