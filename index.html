@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pennypacker's Quote Machine</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Chicle|Raleway|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="quote-outer">
+    <div class="loading">Loading...</div>
+    <div class="quote-container">
+      <div class="quote-text"></div>
+      <div class="author-container">- <span class="author"></span></div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <button class="mah-btn share">Tweet</button>
+    <button class="mah-btn new-quote">New Quote</button>
+    <div class="auto-refresh">
+      <select class="refresh-selector" name="refresh-rate" id="refresh-rate">
+        <option value="0">Never</option>
+        <option value="60">Every minute</option>
+        <option value="120">Every 2 minutes</option>
+        <option value="300">Every 5 minutes</option>
+      </select>
+      <progress class="refresh-progress" value="20" max="50"></progress>
+    </div>
+  </section>
+
+
+  <section class="credits">
+    <span>Quotes graciously provided by <a href="https://seinfeld-quotes.herokuapp.com/" target="_blank"
+      >seinfeld-quotes.herokuapp.com</a></span>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

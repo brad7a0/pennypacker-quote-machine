@@ -1,0 +1,143 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
+
+:root {
+  /* variables go here */
+  --color0: #155086;
+  --color1: #198e88;
+  --color2: #3498db;
+  --color3: #9b59b6;
+  --color4: #34495e;
+  --color5: #c1940f;
+  --color6: #e67e22;
+  --color7: #e74c3c;
+  --color8: #5b3c3d;
+  --color9: #20853f;
+  --main-color: var(--color0);
+  --white: rgba(255, 255, 255, .9);
+  --link-color: lightblue;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* for older browsers */
+  background-color: #1abc9c;
+  color: #333;
+
+  background-color: var(--main-color);
+  color: var(--main-color);
+  transition: background-color 1s, color 1s;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 400px;
+}
+
+a, a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.quote-outer {
+  background: rgba(255, 255, 255, .95);
+  border-radius: 5px;
+  margin: 25vh auto 0 auto;
+  width: 70vw;
+  padding: 20px;
+  transition: opacity .3s, height .3s;
+  position: relative;
+}
+
+.quote-container {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.quote-text {
+  /* for older browsers */
+  font-size: 1.5em;
+
+  font-size: calc(2vw + 2vh);
+  line-height: 1.5em;
+}
+
+.smaller-quote-text {
+  font-size: 2.7vw;
+}
+
+.smallest-quote-text {
+  font-size: 2.2vw;
+}
+
+.author-container {
+  padding: 3vh 0 1vh;
+  text-align: right;
+}
+
+.loading {
+  font-size: 1.5em;
+  font-size: calc(1.5vw + 1.5vh);
+  position: absolute;
+  left: 2vw;
+  top: 5vh;
+}
+
+.author {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2.5vw;
+  margin-right: 1vw;
+}
+
+.auto-refresh {
+  display: none;
+}
+
+.controls {
+  position: fixed;
+  left: 0px;
+  top: 7px;
+  height: 60px;
+  width: 100%;
+  padding: 10px 15px;
+  color: var(--white);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mah-btn {
+  border-radius: 4px;
+  margin: 0 5px;
+  background: var(--white);
+  color: var(--main-color);
+  font-weight: bold;
+  transition: color .5s;
+  padding: 6px 11px 6px;
+}
+
+.mah-btn:focus {
+  outline: none;
+}
+
+.credits {
+  position: fixed;
+  left: 0px;
+  bottom: 10px;
+  height: 40px;
+  width: 100vw;
+  color: var(--white);
+  text-align: center;
+}
+
+
