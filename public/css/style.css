@@ -38,7 +38,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   font-weight: bold;
-  /*min-height: 400px;*/
 }
 
 a, a:visited {
@@ -128,6 +127,12 @@ a:hover {
   font-weight: bold;
   transition: color .5s;
   padding: 6px 11px 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.mah-btn:active {
+  background: white;
 }
 
 .mah-btn:focus {
