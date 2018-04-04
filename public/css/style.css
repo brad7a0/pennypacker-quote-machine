@@ -1,6 +1,3 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
-@import url("loaders.min.css");
-
 :root {
   /* variables go here */
   --color0: #155086;
@@ -88,15 +85,6 @@ a:hover {
   text-align: right;
 }
 
-.loading {
-  font-size: 1.5em;
-  font-size: calc(1.2vw + 1.2vh);
-  position: absolute;
-  left: 50vw;
-  top: 48vh;
-  transform: translate(-50%, -50%);
-}
-
 .author {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2.5vw;
@@ -149,11 +137,20 @@ a:hover {
   text-align: center;
 }
 
-div.line-scale-pulse-out {
+.loading {
+  font-size: 1.5em;
+  font-size: calc(1.2vw + 1.2vh);
+  position: absolute;
+  left: 50vw;
+  top: 48vh;
+  transform: translate(-50%, -50%);
+}
+
+.loading div.line-scale-pulse-out {
   margin: 0 auto;
 }
 
-.line-scale-pulse-out > div {
+.loading .line-scale-pulse-out > div {
   background-color: var(--main-color);
 }
 
