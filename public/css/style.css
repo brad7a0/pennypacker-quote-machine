@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
+@import url("loaders.min.css");
 
 :root {
   /* variables go here */
@@ -37,7 +38,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   font-weight: bold;
-  min-height: 400px;
+  /*min-height: 400px;*/
 }
 
 a, a:visited {
@@ -53,11 +54,11 @@ a:hover {
 .quote-outer {
   background: rgba(255, 255, 255, .95);
   border-radius: 5px;
-  margin: 25vh auto 0 auto;
+  margin: 48vh auto 0 auto;
+  transform: translateY(-50%);
   width: 70vw;
   padding: 20px;
   transition: opacity .3s, height .3s;
-  position: relative;
 }
 
 .quote-container {
@@ -71,7 +72,7 @@ a:hover {
 
   font-size: calc(2vw + 2vh);
   line-height: 1.5em;
-  max-height: 65vh;
+  max-height: 60vh;
   overflow:  auto;
 }
 
@@ -92,8 +93,9 @@ a:hover {
   font-size: 1.5em;
   font-size: calc(1.2vw + 1.2vh);
   position: absolute;
-  left: 2vw;
-  top: 4vh;
+  left: 50vw;
+  top: 48vh;
+  transform: translate(-50%, -50%);
 }
 
 .author {
@@ -142,10 +144,18 @@ a:hover {
   text-align: center;
 }
 
+div.line-scale-pulse-out {
+  margin: 0 auto;
+}
+
+.line-scale-pulse-out > div {
+  background-color: var(--main-color);
+}
+
 @media only screen and (max-width: 600px) {
 
   .quote-outer {
-    margin-top: 20vh;
+    /*margin-top: 20vh;*/
   }
 
   .quote-text {
